@@ -1,6 +1,7 @@
 language:
 - objective-c
-install: source travis/build_wheel.sh
+install:
+- "set -e"
 script:
 - echo "done."
 deploy:
