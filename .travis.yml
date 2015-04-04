@@ -16,6 +16,7 @@ deploy:
   api_key:
     secure: Bi3oKry6+p4po3YGGGhgwUgWZhzWDf8e7wM15MfRXf2EgAYMNFNnKgQo05HiCYHMYZ5P5573aiId4QlCm86iyhd3ZCcr116EmZAlGD7AfD/mS8YpIDGhbpo2dbI9oho3cSOm4DpQcFX/49jVY3GVQw6ld+B3CTK1XLkBwfwuCPY=
   file: dist/*.whl
+  skip_cleanup: true
   file_glob: true
   on:
     tags: true
