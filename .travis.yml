@@ -1,0 +1,22 @@
+language:
+- objective-c
+env:
+  global:
+  - NUMPY_VERSION="1.8.2" SEABREEZE_VERSION="3.0.6"
+  matrix:
+  - PYTHON_VERSION="2.7"
+  - PYTHON_VERSION="3.3"
+  - PYTHON_VERSION="3.4"
+install:
+- echo "haha."
+script:
+- echo "done."
+deploy:
+  provider: releases
+  api_key:
+    secure: Bi3oKry6+p4po3YGGGhgwUgWZhzWDf8e7wM15MfRXf2EgAYMNFNnKgQo05HiCYHMYZ5P5573aiId4QlCm86iyhd3ZCcr116EmZAlGD7AfD/mS8YpIDGhbpo2dbI9oho3cSOm4DpQcFX/49jVY3GVQw6ld+B3CTK1XLkBwfwuCPY=
+  file: dist/*.whl
+  file_glob: true
+  on:
+    tags: true
+    all_branches: true
