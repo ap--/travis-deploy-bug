@@ -22,4 +22,4 @@ pip install wheel
 pip install delocate
 
 # clean up
-source deactivate
+# source deactivate
