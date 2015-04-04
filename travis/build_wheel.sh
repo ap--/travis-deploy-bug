@@ -12,14 +12,14 @@ conda update --yes conda
 
 # create a conda environment with the necessary Python modules for a build
 conda create --yes -n build_env python=$PYTHON_VERSION
-source activate build_env
-conda install --yes setuptools pip numpy=$NUMPY_VERSION six cython
-python --version
+#source activate build_env
+#conda install --yes setuptools pip numpy=$NUMPY_VERSION six cython
+#python --version
 
 # build the wheel
-echo "Building seabreeze-wheel for Python: $PYTHON_VERSION"
-pip install wheel
-pip install delocate
+#echo "Building seabreeze-wheel for Python: $PYTHON_VERSION"
+#pip install wheel
+#pip install delocate
 
 # clean up
 # source deactivate
