@@ -8,10 +8,10 @@ wget http://repo.continuum.io/miniconda/Miniconda-3.5.2-MacOSX-x86_64.sh \
 chmod +x miniconda.sh
 ./miniconda.sh -b
 export PATH=/Users/travis/miniconda/bin:$PATH
-conda update --yes conda
+#conda update --yes conda
 
 # create a conda environment with the necessary Python modules for a build
-conda create --yes -n build_env python=$PYTHON_VERSION
+#conda create --yes -n build_env python=$PYTHON_VERSION
 #source activate build_env
 #conda install --yes setuptools pip numpy=$NUMPY_VERSION six cython
 #python --version
